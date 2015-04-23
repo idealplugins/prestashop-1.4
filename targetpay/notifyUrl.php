@@ -28,5 +28,11 @@
 		$updateArr["order_id"] = $order->id;
 		$updateArr["status"] = 1;
 		$targetpay->updateTransaction($updateArr,$trxid, 'notify');
+		echo "Paid... ";
+	} else {
+		echo "Not paid... ";
 	}
-	die( "OK" );
+	echo "(Prestashop-1.4, 23-04-2015)";
+	die();
+
+
